@@ -39,6 +39,6 @@ jobs:
       run: |
         curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
         echo Unified Agent downloaded successfully
-        WARFILE=$(find ./ -type f -wholename "*/target/*.jar")
+        WARFILE=$(find ./ -type f -wholename "*/target/DataFastLaneApp-0.4.0.jar")
         java -jar wss-unified-agent.jar -appPath $WARFILE -d ./
         
